@@ -1,0 +1,306 @@
+@media (min-width: 2000px)
+    header
+        .menu
+            right: 475px
+
+@media (max-width: 1880px)
+    header
+        .menu
+            &_btn
+                right: 50px
+
+@media (max-width: 1620px)
+    .testim
+        &_img
+            display: none
+        &_header
+            right: 18%
+            margin: 0
+            padding: 0
+
+@media (max-width: 1399px)
+    .how_works
+        &_line
+            width: 700px
+    .about
+        &_img
+            &_rectangle
+                right: 140px
+    .how_works
+        &_line
+            width: 700px
+    // .about
+    //     &_img
+    //         &_rectangle
+    //             right: 140px
+
+@media (max-width: 1316px)
+    header
+        .menu
+            &_btn
+                width: 110px
+    
+
+@media (max-width: 1199px)
+    header
+        .header
+            &_logo
+                left: 150px
+                img
+                    width: 150px
+            &_img_wrapper
+                position: relative
+                top: 30px
+            &_subheader
+                width: 500px
+    .how_works
+        &_line
+            width: 530px
+        &_text
+            font-size: 12px
+            width: 250px
+    .price
+        height: 1500px
+        &_wrapper
+            flex-direction: column
+            top: 0
+        &_text
+            margin-top: 30px
+        &_elem
+            margin-top: 30px
+    .about
+        &_text
+            &_main
+                margin-top: 90px
+            &_another
+                font-weight: 700
+                width: 370px
+        &_img
+            &_woman
+                width: 350px
+            &_man
+                width: 300px
+            &_rectangle
+                width: 400px
+                bottom: 327px
+                left: 0px
+        &_link
+            position: relative
+            left: 72px
+            margin-top: 10px
+            
+@media (max-width: 1060px)
+    footer
+        .footer_btn
+            bottom: 90px
+
+@media (max-width: 1050px)
+    header
+        .header
+            &_logo
+                left: 100px
+                img
+                    width: 120px
+            &_img_wrapper
+                position: relative
+                top: 35px
+
+@media (max-width: 991px)
+    .about
+        &_img
+            &_woman
+                width: 330px
+            &_man
+                height: 300px
+            &_rectangle
+                left: -47px
+        &_text
+            &_main
+                font-size: 23px
+            &_another
+                font-size: 11px
+                margin-top: 17px
+        &_link
+            font-size: 11px
+            left: 0
+    .how_works
+        &_line
+            left: 185px
+            width: 425px
+
+@media (max-width: 970px)
+    header
+        height: 720px
+        .menu
+            font-size: 12px
+            right: 212px
+            &_btn
+                width: 80px
+                font-size: 12px
+        .header
+            &_img_wrapper
+                &_1
+                    display: none
+                &_2
+                    display: none
+                &_3
+                    display: none
+            &_subheader
+                width: 400px
+                color: black
+                font-weight: 700
+                text-shadow: white 0 0 2px
+            &_wrapper
+                margin-top: 83px
+                &_btn
+                    border: 2px solid $dark_blue
+    .about
+        &_img
+            &_rectangle
+                bottom: 317px
+                left: -68px
+        
+
+
+@media (max-width: 794px)
+    header
+        .header_btn_down
+            display: block
+            margin: 0 auto
+
+@media (max-width: 768px)
+    header
+        .menu
+            &_btn
+                right: 22px
+        .header
+            &_main_text
+                font-size: 30px
+                text-align: center
+            &_subheader
+                width: 370px
+                font-size: 13px
+                z-index: 50
+            &_wrapper
+                width: 305px
+                &_btn
+                    margin-top: 38px
+                    width: 130px
+                    box-shadow: 0px 4px 20px rgba(4, 23, 46, 0.2)
+        .menu
+            position: fixed
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            top: 0
+            left: -100%
+            width: 50%
+            height: 100vh
+            padding: 20px 15px
+            background: $blue_color
+            opacity: 0.8
+            transition: 0.6s all
+            z-index: 90
+            &_active
+                left: 0
+                color: white
+            &_item
+                padding-right: 0
+                border: none
+                margin: 10px 0
+            &_link
+                position: relative
+                font-size: 22px
+                font-weight: 700
+                color: white
+                z-index: 100
+        .hamburger
+            display: block
+            position: absolute
+            right: 50px
+            top: 10%
+            transform: translateY(-50%)
+            width: 26px
+            height: 12px
+            span
+                display: block
+                height: 3px
+                width: 33px
+                background-color: #fff
+                margin-bottom: 2px
+                transition: 0.5s all
+            &_active
+                span
+                    margin-bottom: -2px
+                    &:nth-child(1)
+                        transform: translateY(3px) rotate(-45deg)
+                    &:nth-child(2)
+                        display: none
+                    &:nth-child(3)
+                        transform: translateY(3px) rotate(45deg)
+        .xs-hidden
+            display: none
+        .xs-visible
+            display: block
+    .about
+        min-height: 550px
+        &_images
+            display: none
+    .how_works
+        min-height: 1000px
+        &_header
+            left: 91px
+        &_line
+            display: none
+        &_wrapper
+            flex-direction: column
+            align-items: center
+            &_elem
+                margin-top: 30px
+    footer
+        .footer
+            &_copyrights
+                display: none
+            &_wrapper
+                &_social_networks
+                    left: 32px
+
+@media (max-width: 576px)
+    header
+        height: 600px
+        .header
+            &_main_text
+                font-size: 21px
+            &_subheader
+                font-size: 11px
+    .about
+        &_text
+            &_another
+                width: 250px
+        &_link
+            font-size: 9px
+            margin-bottom: 30px
+
+@media (max-width: 448px)
+    header
+        .hamburger
+            right: 30px
+        .header
+            &_wrapper
+                flex-direction: column
+                &_btn
+                    display: block
+                    margin: 0 auto
+
+@media (min-width: 320px) and (max-width: 530px)
+    .testim
+        &_header
+            font-size: 18px
+    
+    footer
+        .footer
+            &_wrapper
+                font-size: 8px
+
+
+    
